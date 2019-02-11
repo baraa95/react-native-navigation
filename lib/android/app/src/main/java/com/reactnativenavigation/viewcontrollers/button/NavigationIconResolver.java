@@ -38,7 +38,7 @@ public class NavigationIconResolver {
             });
         } else if (Constants.BACK_BUTTON_ID.equals(button.id)) {
              Boolean isRTL = direction == View.LAYOUT_DIRECTION_RTL;
-             onSuccess.run(ContextCompat.getDrawable(context, isRTL ? R.drawable.ic_arrow_back_black_rtl_24dp : R.drawable.ic_arrow_back_black_24dp));
+             onSuccess.run(ContextCompat.getDrawable(context, isRTL ?  R.drawable.ic_arrow_back_black_24dp : R.drawable.ic_arrow_back_black_24dp));
             } else {
             Log.w("RNN", "Left button needs to have an icon");
         }
